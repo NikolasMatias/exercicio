@@ -1,2 +1,26 @@
 # exercicio
-Criar um site que calcule o IMC passado.
+
+Este projeto tem como objetivo criar uma página para encontrar o IMC de alguém.
+
+# Obtendo o Projeto
+
+git clone https://github.com/NikolasMatias/exercicio.git
+
+# Executando a aplicação
+
+mvn org.apache.tomcat.maven:tomcat7-maven-plugin:run -Dmaven.tomcat.port=9090 ou ./mvnw tomcat7:run
+
+# Acessando a aplicação
+
+Acesse http://localhost:9090/lab-dw-2017-1 em qualquer navegador.
+
+# Como o projeto foi construido
+## **"Embutindo" o Maven**
+
+Para que não seja necessário instalar e configurar o Maven, ele foi embutido no projeto com o seguinte comando:
+
+mvn io.takari:maven:0.3.3:wrapper -Dmaven=3.3.9
+
+# Imagem de exemplo
+
+![imc](#)
